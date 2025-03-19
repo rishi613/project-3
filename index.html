@@ -13,6 +13,7 @@
             Result <input type="number" id="num3">
             <button onclick="add()">ADD</button>
             <button onclick="sub()">SUB</button>
+            <button onclick="mul()">Mul</button>
             
 
         </fieldset>
@@ -29,6 +30,13 @@
                 let num1 = parseFloat(document.getElementById("num1").value);
                 let num2 = parseFloat(document.getElementById("num2").value);
                 let result = num1 - num2;
+
+                document.getElementById("num3").value = result;
+            }
+            function mul() {
+                let num1 = parseFloat(document.getElementById("num1").value);
+                let num2 = parseFloat(document.getElementById("num2").value);
+                let result = num1 * num2;
 
                 document.getElementById("num3").value = result;
             }
